@@ -1,0 +1,5 @@
+{
+    "inputUri":"gs://dugmlobjectracking/video_chunks/MASTER v30_RB_11.04 SXSW CUT - 11.4 export.mp4",
+    "features": ["LOGO_RECOGNITION"],
+    "outputUri":"gs://dugmlobjectracking/output.json"
+}
