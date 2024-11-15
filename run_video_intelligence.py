@@ -3,11 +3,11 @@ from google.cloud import videointelligence
 
 import time
 
-gcs_uri = "gs://fiddleml/MASTER v30_RB_11.04 SXSW CUT - 11.4 export.mp4"
-output_uri = "gs://fiddleml/output - {}.json".format(time.time())
+gcs_uri = "PATH_TO_YOUR_FILE_ON_GCP_BUCKET.mp4"
+output_uri = "PATH_TO_YOUR_JSON_FILE_ON_GCP_BUCKET.json".format(time.time())
 
 video_client = videointelligence.VideoIntelligenceServiceClient.from_service_account_file(
-    "/Users/kcahill/Downloads/video-intelligence-api-visualiser-main/nova-436119-281cfbc9b35b.json")
+    "PATH_TO_YOUR_JSON_SERVICE_ACCOUNT.json")
 
 features = [
     videointelligence.Feature.LOGO_RECOGNITION
